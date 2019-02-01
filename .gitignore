@@ -1,6 +1,10 @@
 # Visual Studio Code Files
 .vscode/
 
+# Illustrator files
+ai/
+*.ai
+
 # Logs
 logs
 *.log
