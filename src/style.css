@@ -8,16 +8,7 @@ body {
     background-color: #991f23;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.titlebar {
+.title-bar {
     position: absolute;
 
     width: 100%;
@@ -25,4 +16,18 @@ body {
     background-color: #0002;
 
     -webkit-app-region: drag; 
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.roll-icon {
+    height: 5em;
 }

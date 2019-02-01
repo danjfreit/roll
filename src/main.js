@@ -6,6 +6,7 @@ function createWindow () {
     titleBarStyle: 'hidden',
     width: 200, 
     height: 300,
+    resizable: false,
     backgroundColor: '#991f23' 
   });
 
