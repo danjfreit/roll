@@ -1,0 +1,29 @@
+{
+  "name": "roll",
+  "version": "1.0.0",
+  "description": "A clean and simple dice roller for D&D and other games. ",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danjfreit/roll.git"
+  },
+  "keywords": [
+    "game",
+    "games",
+    "dice",
+    "dnd"
+  ],
+  "author": "Daniel Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danjfreit/roll/issues"
+  },
+  "homepage": "https://github.com/danjfreit/roll#readme"
+}
