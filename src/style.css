@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #6e2525;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlebar {
+    position: absolute;
+
+    width: 100%;
+    height: 1.3rem;
+    background-color: #0002;
+
+    -webkit-app-region: drag; 
+}
