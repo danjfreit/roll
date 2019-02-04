@@ -1,4 +1,5 @@
-const { app, BrowserWindow } = require('electron');
+const colors = require('colors');
+const { app, BrowserWindow, ipcMain } = require('electron');
 
 function createWindow () {
   win = new BrowserWindow({
@@ -15,5 +16,18 @@ function createWindow () {
     win.show();
   })
 }
-
 app.on('ready', createWindow);
+
+
+ipcMain.on('roll-message', event => {
+  let result = Roll();
+  event.sender.send('roll-reply', result);
+})
+
+function Roll() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+
+ipcMain.on('debug-message', (event, message) => {
+  console.log(message);
+})

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A clean and simple dice roller for D&D and other games. ",
   "main": "src/main.js",
-  "dependencies": {},
+  "dependencies": {
+    "colors": "^1.3.3"
+  },
   "devDependencies": {
     "electron": "^4.0.3"
   },
