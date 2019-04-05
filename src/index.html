@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Roll</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<script> require('./renderer.js') </script>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <div class="title-bar"></div>
     <div class="container">
-        <img src="img/d6.svg" alt="A die 6" class="roll-icon">
-        <div>Let's get rollin'</div>
+      <div class="roll-btn">
+        <div>?</div>
+      </div>
+      <div class="roll-options">Let's get rollin'</div>
     </div>
-</body>
+    <script>
+      require("./renderer.js");
+    </script>
+  </body>
 </html>

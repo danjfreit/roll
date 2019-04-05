@@ -1,47 +1,59 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background-color: #991f23;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #991f23;
+  user-select: none;
 }
 
 .title-bar {
-    position: absolute;
+  position: absolute;
 
-    width: 100%;
-    height: 1.3rem;
-    background-color: #0002;
+  width: 100%;
+  height: 1.3rem;
+  background-color: #0002;
 
-    -webkit-app-region: drag; 
+  -webkit-app-region: drag;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 60% auto;
-    grid-template-areas: 
-        "upper"
-        "lower";
-    grid-gap: 1em;
-    
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60% auto;
+  grid-template-areas:
+    "upper"
+    "lower";
+  grid-gap: 1em;
+
+  justify-items: center;
+  align-items: center;
 }
 
 .roll-btn {
-    align-self: end;
+  align-self: end;
+  background-color: #222;
+  -webkit-mask-image: url(img/d6.svg);
+  height: 5em;
+  width: 5em;
+
+  color: #aaa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.roll-icon {
-    height: 5em;
+.roll-btn :first-child {
+  font-size: 2em;
 }
 
 .roll-options {
-    align-self: start;
+  align-self: start;
 }
